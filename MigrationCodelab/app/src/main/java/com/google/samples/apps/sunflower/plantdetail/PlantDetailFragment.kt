@@ -63,7 +63,7 @@ class PlantDetailFragment : Fragment() {
             // region Compose world
             composeView.setContent {
                 MaterialTheme {
-                    PlantDetailDescription()
+                    PlantDetailDescription(plantDetailViewModel)
                 }
             }
             // endregion
