@@ -16,7 +16,6 @@
 
 package com.google.samples.apps.sunflower.plantdetail
 
-import androidx.compose.foundation.layout.absoluteOffset
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.wrapContentWidth
@@ -44,18 +43,18 @@ private fun PlantName(name: String) {
     )
 }
 
+@Composable
+fun PlantDetailDescription() {
+    Surface {
+        Text("Hello Compose")
+    }
+}
+
 @Preview
 @Composable
 fun PlantNamePreview() {
     MaterialTheme {
         PlantName("Apple")
-    }
-}
-
-@Composable
-fun PlantDetailDescription() {
-    Surface {
-        Text("Hello Compose")
     }
 }
 
