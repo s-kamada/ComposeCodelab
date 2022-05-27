@@ -76,8 +76,9 @@ fun PlantWatering(wateringInterval: Int) {
             .padding(horizontal = dimensionResource(id = R.dimen.margin_small))
             .align(Alignment.CenterHorizontally)
 
+        //    <TextView
+        //    android:id="@+id/plant_watering_header"
         val normalPadding = dimensionResource(R.dimen.margin_normal)
-
         Text(
             text = stringResource(R.string.watering_needs_prefix),
             color = MaterialTheme.colors.primaryVariant,
@@ -85,6 +86,8 @@ fun PlantWatering(wateringInterval: Int) {
             modifier = centerWithPaddingModifier.padding(top = normalPadding)
         )
 
+//        <TextView
+//        android:id="@+id/plant_watering"
         val wateringIntervalText = LocalContext.current.resources.getQuantityString(
             R.plurals.watering_needs_suffix, wateringInterval, wateringInterval
         )
@@ -95,6 +98,7 @@ fun PlantWatering(wateringInterval: Int) {
     }
 }
 
+// region preview
 @Preview
 @Composable
 fun PlantDetailContentPreview() {
@@ -119,6 +123,7 @@ fun PlantWateringPreview() {
         PlantWatering(wateringInterval = 7)
     }
 }
+// endregion preview
 
 /** original layout code
 <androidx.constraintlayout.widget.ConstraintLayout
