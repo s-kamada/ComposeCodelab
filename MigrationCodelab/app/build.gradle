@@ -16,7 +16,9 @@
 
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
+// TODO: this causes compile error
+//  https://stackoverflow.com/questions/70425607/kotlin-1-6-jetpack-compose-1-1-0-compilation-error
+//apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'androidx.navigation.safeargs.kotlin'
 
